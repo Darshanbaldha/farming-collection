@@ -29,19 +29,28 @@ if (!process.env.SESSION_SECRET) {
   throw new Error("SESSION_SECRET is missing. Add it to your .env file.");
 }
 
-app.use(session({
-  name: "fc.sid",
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  store: MongoStore.create({ mongoUrl: process.env.MONGODB_URI, collectionName: "sessions", ttl: 60 * 60 * 8 }),
-  cookie: {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
-    maxAge: 1000 * 60 * 60 * 8,
-  },
-}));
+app.use(
+  session({
+    name: "fc.sid",
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGODB_URI,
+      dbName: "farming_collection_text",
+      collectionName: "sessions",
+      ttl: 60 * 60 * 8,
+    }),
+
+    cookie: {
+      httpOnly: true,
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 1000 * 60 * 60 * 8,
+    },
+  })
+);
 
 // Protect member-only pages before Express serves static HTML files.
 const memberPages = new Set(["/buy.html", "/sell.html", "/cart.html", "/profile-setup.html", "/account.html"]);
