@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Review your fresh farm produce shopping cart at Farming Collection." name="description"/>
+  <title>
+   Shopping Cart | Farming Collection
+  </title>
+  <link href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Roboto:wght@500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="container-fluid px-5 d-none d-lg-block">
+   <div class="row py-3 align-items-center justify-content-center">
+    <div class="col-lg-6 text-center">
+     <a class="navbar-brand" href="/index.html">
+      <h1 class="m-0 display-4">
+       <span class="text-secondary">
+        Farming
+       </span>
+       Collection
+      </h1>
+     </a>
+    </div>
+   </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
+   <a class="navbar-brand d-flex d-lg-none" href="/index.html">
+    <h1 class="m-0 display-5 text-secondary">
+     <span class="text-white">
+      Farm
+     </span>
+     Fresh
+    </h1>
+   </a>
+   <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+    </span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav mx-auto py-0">
+     <a class="nav-item nav-link" href="/index.html">
+      Home
+     </a>
+     <a class="nav-item nav-link" href="/about.html">
+      About
+     </a>
+     <a class="nav-item nav-link" href="/service.html">
+      Service
+     </a>
+     <a class="nav-item nav-link" href="/sell.html">
+      Sell
+     </a>
+     <a class="nav-item nav-link" href="/buy.html">
+      Buy
+     </a>
+     <a class="nav-item nav-link" href="/contact.html">
+      Contact
+     </a>
+     <a class="nav-item nav-link" href="/login.html">
+      Log In
+     </a>
+     <a class="nav-item nav-link" href="/signup.html">
+      Sign Up
+     </a>
+    </div>
+   </div>
+  </nav>
+  <main class="container-fluid cart-page py-5">
+   <div class="container">
+    <div class="cart-heading text-center mb-5">
+     <span class="text-primary text-uppercase fw-bold">
+      Your Basket
+     </span>
+     <h1 class="display-5 mt-2">
+      Shopping Cart
+     </h1>
+     <p class="text-muted mb-0">
+      Fresh produce from local farms, ready for your home.
+     </p>
+    </div>
+    <div class="row g-4 align-items-start">
+     <div class="col-lg-8">
+      <section aria-label="Shopping cart items" class="shopping-cart cart-panel">
+       <div class="cart-table-heading">
+        <span>
+         Product
+        </span>
+        <span>
+         Price
+        </span>
+        <span>
+         Quantity
+        </span>
+        <span>
+         Item Total
+        </span>
+        <span>
+         Action
+        </span>
+       </div>
+       <div class="cart-product-list">
+       </div>
+      </section>
+      <div class="d-flex flex-wrap gap-3 mt-4">
+       <a class="btn btn-outline-primary px-4 py-3" href="/index.html">
+        <i aria-hidden="true" class="bi bi-house-door me-2">
+        </i>
+        Go to Home
+       </a>
+       <a class="btn btn-secondary px-4 py-3" href="/buy.html">
+        <i aria-hidden="true" class="bi bi-arrow-left me-2">
+        </i>
+        Continue Shopping
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-4">
+      <aside aria-label="Order summary" class="cart-summary-card">
+       <h2 class="h4 mb-4">
+        Order Summary
+       </h2>
+       <div class="cart-summary-row">
+        <span>
+         Subtotal
+        </span>
+        <strong id="cart-subtotal">
+         ₹0.00
+        </strong>
+       </div>
+       <div class="cart-summary-row">
+        <span>
+         GST (5%)
+        </span>
+        <strong id="cart-tax">
+         ₹0.00
+        </strong>
+       </div>
+       <div class="cart-summary-row">
+        <span>
+         Delivery
+        </span>
+        <strong id="cart-shipping">
+         ₹0.00
+        </strong>
+       </div>
+       <div class="cart-summary-total">
+        <span>
+         Grand Total
+        </span>
+        <strong id="cart-total">
+         ₹0.00
+        </strong>
+       </div>
+       <button class="btn btn-primary w-100 py-3 checkout" type="button">
+        <i aria-hidden="true" class="bi bi-shield-check me-2">
+        </i>
+        Checkout
+       </button>
+       <p class="cart-checkout-note">
+        <i aria-hidden="true" class="bi bi-info-circle me-1">
+        </i>
+        Demo checkout only. Online payment is not enabled.
+       </p>
+      </aside>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="container-fluid bg-footer bg-primary text-white mt-4 py-4">
+   <div class="container text-center">
+    <a class="text-white text-decoration-none" href="/index.html">
+     <h3 class="mb-2">
+      <span class="text-secondary">
+       Farming
+      </span>
+      Collection
+     </h3>
+    </a>
+    <p class="mb-0">
+     Connecting farmers and customers with fresh farm produce.
+    </p>
+   </div>
+  </footer>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="/js/main.js">
+  </script>
+  <script defer="" src="/js/marketplace.js">
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Create your Farming Collection account." name="description"/>
+  <title>
+   Sign Up | Farming Collection
+  </title>
+  <link href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Roboto:wght@500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 px-3 px-lg-5">
+   <a class="navbar-brand d-lg-none" href="/index.html">
+    <span class="h4 text-white">
+     Farming
+     <span class="text-secondary">
+      Collection
+     </span>
+    </span>
+   </a>
+   <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+    </span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav mx-auto py-0">
+    </div>
+   </div>
+  </nav>
+  <main class="container-fluid py-5 auth-page">
+   <div class="text-center mb-4">
+    <a class="text-decoration-none" href="/index.html">
+     <h2 class="text-primary fw-bold">
+      Farming Collection
+     </h2>
+    </a>
+    <p class="text-muted">
+     Join our farming community.
+    </p>
+   </div>
+   <div class="container">
+    <div class="row justify-content-center">
+     <div class="col-lg-7 col-xl-6">
+      <section class="bg-primary p-4 p-md-5 rounded-3 shadow">
+       <h1 class="h2 text-white text-center mb-4">
+        Create Account
+       </h1>
+       <form action="/api/signup" class="auth-form" method="post">
+        <label class="visually-hidden" for="signup-email">
+         Email address
+        </label>
+        <input autocomplete="email" class="form-control bg-light border-0 px-4 mb-3" id="signup-email" maxlength="254" name="email" placeholder="Your Email" required="" style="height:55px" type="email"/>
+        <label class="visually-hidden" for="signup-password">
+         Password
+        </label>
+        <input autocomplete="new-password" class="form-control bg-light border-0 px-4 mb-3" id="signup-password" maxlength="128" minlength="8" name="password" placeholder="Create Password (minimum 8 characters)" required="" style="height:55px" type="password"/>
+        <label class="visually-hidden" for="signup-confirm">
+         Confirm password
+        </label>
+        <input autocomplete="new-password" class="form-control bg-light border-0 px-4 mb-3" id="signup-confirm" maxlength="128" minlength="8" name="confirmPassword" placeholder="Confirm Password" required="" style="height:55px" type="password"/>
+        <button class="btn btn-secondary w-100 py-3" type="submit">
+         Create Account
+        </button>
+       </form>
+       <p class="text-center text-white mt-4 mb-0">
+        Already have an account?
+        <a class="text-white fw-bold" href="/login.html">
+         Log in
+        </a>
+       </p>
+      </section>
+     </div>
+    </div>
+   </div>
+  </main>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="/js/main.js">
+  </script>
+  <script defer="" src="/js/marketplace.js">
+  </script>
+ </body>
+</html>
+
